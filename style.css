@@ -140,6 +140,7 @@ p {
   padding: 16px;
   background-color: transparent;
   transition: all var(--animation-duration) ease-in-out;
+  z-index: 1;
 }
 
 #navbar.navbar--dark {
@@ -440,7 +441,7 @@ p {
 }
 
 .testimonials {
-  margin: 40px;
+  margin: 80px;
 }
 
 .testimonial {
@@ -459,7 +460,7 @@ p {
 }
 
 .testimonial__avatar:nth-child(even) {
-  margin-right: 40px;
+  margin-left: 40px;
 }
 
 .testimonial__speech-bubble {
