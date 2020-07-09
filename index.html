@@ -13,7 +13,7 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap"
       rel="stylesheet"
     />
-
+    <script src="main.js" defer></script>
     <link rel="stylesheet" href="style.css" />
 
     <title>Junghyun's Portfolio</title>
@@ -35,6 +35,11 @@
           <li class="navbar__menu__item">Contact</li>
         </ul>
       </div>
+
+      <!--Toggle button  -->
+      <button class="navbar__toggle-btn">
+        <i class="fas fa-bars"></i>
+      </button>
     </nav>
 
     <!-- Home -->
@@ -165,7 +170,7 @@
               </ul>
             </div>
             <div class="etc">
-              <h3 class="skilset__title">ETC</h3>
+              <h3 class="skillset__title">ETC</h3>
               <ul class="etc__list">
                 <li><span>Git</span></li>
                 <li><span>Economy</span></li>
@@ -178,76 +183,88 @@
     </section>
     <!-- Work -->
     <section id="work" class="section">
-      <h1>My work</h1>
-      <h3>Projects</h3>
-      <div class="work__categories">
-        <button class="category__btn active">
-          ALL<span class="category__count">8</span>
-        </button>
-        <button class="category__btn">
-          Front-end<span class="category__count">3</span>
-        </button>
-        <button class="category__btn">
-          Back-end<span class="category__count">3</span>
-        </button>
-        <button class="category__btn">
-          Mobile<span class="category__count">2</span>
-        </button>
-      </div>
+      <div class="section__container">
+        <h1>My work</h1>
+        <h3>Projects</h3>
+        <div class="work__categories">
+          <button class="category__btn active">
+            ALL<span class="category__count">8</span>
+          </button>
+          <button class="category__btn">
+            Front-end<span class="category__count">3</span>
+          </button>
+          <button class="category__btn">
+            Back-end<span class="category__count">3</span>
+          </button>
+          <button class="category__btn">
+            Mobile<span class="category__count">2</span>
+          </button>
+        </div>
 
-      <div class="work__projects">
-        <a href="github.com" class="project" target="blank">
-          <img src="imgs/iphone.png" alt="Kakao Talk" class="project__img" />
-          <div class="project__description">
-            <h3>Kakao Talk</h3>
-            <span>Clone coding with HTML and CSS</span>
-          </div>
-        </a>
+        <div class="work__projects">
+          <a href="github.com" class="project" target="blank">
+            <img src="imgs/iphone.png" alt="Kakao Talk" class="project__img" />
+            <div class="project__description">
+              <h3>Kakao Talk</h3>
+              <span>Clone coding with HTML and CSS</span>
+            </div>
+          </a>
 
-        <a href="github.com" class="project" target="blank">
-          <img src="imgs/macbook.png" alt="Kakao Talk" class="project__img" />
-          <div class="project__description">
-            <h3>Kakao Talk</h3>
-            <span>Clone coding with HTML and CSS</span>
-          </div>
-        </a>
+          <a href="github.com" class="project" target="blank">
+            <img src="imgs/macbook.png" alt="Kakao Talk" class="project__img" />
+            <div class="project__description">
+              <h3>Kakao Talk</h3>
+              <span>Clone coding with HTML and CSS</span>
+            </div>
+          </a>
 
-        <a href="github.com" class="project" target="blank">
-          <img src="imgs/iphone.png" alt="Kakao Talk" class="project__img" />
-          <div class="project__description">
-            <h3>Kakao Talk</h3>
-            <span>Clone coding with HTML and CSS</span>
-          </div>
-        </a>
+          <a href="github.com" class="project" target="blank">
+            <img src="imgs/iphone.png" alt="Kakao Talk" class="project__img" />
+            <div class="project__description">
+              <h3>Kakao Talk</h3>
+              <span>Clone coding with HTML and CSS</span>
+            </div>
+          </a>
+        </div>
       </div>
     </section>
     <!-- Testimonials -->
     <section id="testimonials" class="section">
-      <h1>Testimonials</h1>
-      <h3>See what they say about me</h3>
-      <div class="testimonials">
-        <div class="testimonial">
-          <img src="imgs/etc.jpg" alt="minsu Lee" class="testimonial__avatar" />
-          <div class="testimonial__speech-bubble">
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor,
-              accusamus eos a quisquam nesciunt ab iste veritatis vero molestiae
-              ducimus saepe dolorum, qui debitis veniam autem, laborum at? Nam,
-              qui.
-            </p>
-            <p class="name"><a href="github.com">Minsu Lee</a> VCNC</p>
+      <div class="section__container">
+        <h1>Testimonials</h1>
+        <h3>See what they say about me</h3>
+        <div class="testimonials">
+          <div class="testimonial">
+            <img
+              src="imgs/etc.jpg"
+              alt="minsu Lee"
+              class="testimonial__avatar"
+            />
+            <div class="testimonial__speech-bubble">
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor,
+                accusamus eos a quisquam nesciunt ab iste veritatis vero
+                molestiae ducimus saepe dolorum, qui debitis veniam autem,
+                laborum at? Nam, qui.
+              </p>
+              <p class="name"><a href="github.com">Minsu Lee</a> VCNC</p>
+            </div>
           </div>
-        </div>
-        <div class="testimonial">
-          <img src="imgs/etc.jpg" alt="minsu Lee" class="testimonial__avatar" />
-          <div class="testimonial__speech-bubble">
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor,
-              accusamus eos a quisquam nesciunt ab iste veritatis vero molestiae
-              ducimus saepe dolorum, qui debitis veniam autem, laborum at? Nam,
-              qui.
-            </p>
-            <p class="name"><a href="github.com">Minsu Lee</a> VCNC</p>
+          <div class="testimonial">
+            <div class="testimonial__speech-bubble">
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor,
+                accusamus eos a quisquam nesciunt ab iste veritatis vero
+                molestiae ducimus saepe dolorum, qui debitis veniam autem,
+                laborum at? Nam, qui.
+              </p>
+              <p class="name"><a href="github.com">Minsu Lee</a> VCNC</p>
+            </div>
+            <img
+              src="imgs/etc.jpg"
+              alt="minsu Lee"
+              class="testimonial__avatar"
+            />
           </div>
         </div>
       </div>
